@@ -176,7 +176,7 @@ java -jar Banker.jar < input.txt
 5. View - Displays Statement of Account Specified
 6. Transfer
 
-####Commands can be found at src/banker/Bloc/Wrapper/Command.java. (Enum)
+####Commands can be found at src/com.bankapp/Bloc/Wrapper/Command.java. (Enum)
 
 ##Classes
 
@@ -199,5 +199,5 @@ Final static constants are defined in this class to avoid runtime modification.
 
 ###Errors
 Runtime Exceptions are defined in this package.
-*src/banker/Bloc/Error*
+*src/com.bankapp/Bloc/Error*
 

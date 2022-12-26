@@ -2,7 +2,7 @@
   <artifact type="jar" name="Banker:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Banker_jar</output-path>
     <root id="archive" name="Banker.jar">
-      <element id="module-output" name="Banker" />
+      <element id="module-output" name="BankApp" />
     </root>
   </artifact>
 </component>
