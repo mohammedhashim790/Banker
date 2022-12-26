@@ -1,4 +1,4 @@
-package banker.Controller.DepositService;
+package banker.Controller.Services.DepositService;
 
 import banker.Bloc.Account.Account;
 import banker.Bloc.Account.Deposit;

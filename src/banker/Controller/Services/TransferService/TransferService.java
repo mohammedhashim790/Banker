@@ -1,8 +1,8 @@
-package banker.Controller.TransferService;
+package banker.Controller.Services.TransferService;
 
 import banker.Bloc.Account.Account;
-import banker.Controller.DepositService.DepositService;
-import banker.Controller.WithdrawalService.WithdrawalService;
+import banker.Controller.Services.DepositService.DepositService;
+import banker.Controller.Services.WithdrawalService.WithdrawalService;
 
 public class TransferService {
 

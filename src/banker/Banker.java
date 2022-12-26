@@ -5,9 +5,7 @@
  */
 package banker;
 
-import banker.Controller.Session.Session;
-
-import java.util.Scanner;
+import banker.Controller.Services.Session.Session;
 
 /**
  *

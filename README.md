@@ -161,8 +161,43 @@ Output: Maximum withdrawal amount is 30000 for account 1002
 -----------------------------------------------------------------------------------
 
 
-## Run
+## Execution
 
 ./out/artifacts/Banker_jar/Banker.jar
 
 java -jar Banker.jar < input.txt
+
+
+### Commands
+1. Create 
+2. Deposit
+3. Withdraw
+4. Balance
+5. View - Displays Statement of Account Specified
+6. Transfer
+
+####Commands can be found at src/banker/Bloc/Wrapper/Command.java. (Enum)
+
+##Classes
+
+###Session
+A singleton and primary class to execute commands. It has been defined singleton to avoid
+duplication of object during runtime.
+
+
+###Printer
+Printer is a static class to log output
+
+###Constants
+Final static constants are defined in this class to avoid runtime modification.
+
+###Services
+1. DepositServices
+2. TransactionServices
+3. WithdrawalServices
+
+
+###Errors
+Runtime Exceptions are defined in this package.
+*src/banker/Bloc/Error*
+
