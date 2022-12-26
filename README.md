@@ -168,6 +168,10 @@ Output: Maximum withdrawal amount is 30000 for account 1002
 java -jar Banker.jar < input.txt
 
 
+##App Config
+Contains constants for the app to run. Present in src/config.properties
+
+
 ### Commands
 1. Create 
 2. Deposit
@@ -191,7 +195,7 @@ Printer is a static class to log output
 ###Constants
 Final static constants are defined in this class to avoid runtime modification.
 
-###Services
+###Services (Singleton Classes)
 1. DepositServices
 2. TransactionServices
 3. WithdrawalServices
