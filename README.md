@@ -205,3 +205,8 @@ Final static constants are defined in this class to avoid runtime modification.
 Runtime Exceptions are defined in this package.
 *src/com.bankapp/Bloc/Error*
 
+
+##Reader
+(src/com/bankapp/Bloc/Reader/*)
+1. Console reader - A class to read input from console window
+2. Text Reader - A class to read input from txt file
