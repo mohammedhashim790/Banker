@@ -12,7 +12,13 @@ public enum Command {
 
     VIEW,
 
+    FIXED,
+
+
+
     TRANSFER;
+
+
 
 
     @Override

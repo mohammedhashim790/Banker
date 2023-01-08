@@ -53,6 +53,13 @@ public final class Constants {
     public static Integer MAX_WITHDRAW_LIMIT = Integer.parseInt(getProperty("app.MAX_WITHDRAW_LIMIT"));
 
 
+    public static Integer FIXED_ACCOUNT_TENURE = Integer.parseInt(getProperty("app.FIXED_ACCOUNT_TENURE"));
+    public static Double FIXED_ACCOUNT_RI = Double.parseDouble(getProperty("app.FIXED_ACCOUNT_RI"));
+
+
+
+
+
     private static String getProperty(String key){
         return (properties.getProperty(key));
     }

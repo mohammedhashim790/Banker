@@ -1,9 +1,6 @@
 package com.bankapp.Bloc.Reader;
 
-import com.bankapp.Bloc.Account.Account;
-import com.bankapp.Bloc.Account.Deposit;
-import com.bankapp.Bloc.Account.Transfer;
-import com.bankapp.Bloc.Account.Withdrawal;
+import com.bankapp.Bloc.Account.*;
 import com.bankapp.Bloc.Wrapper.Command;
 
 public interface IReader {
@@ -36,6 +33,8 @@ public interface IReader {
     public Account nextNewAccount();
 
     public Account nextExistingAccount();
+
+    public FixedAccount nextFixedAccount();
 
 
 

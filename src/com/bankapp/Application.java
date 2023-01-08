@@ -1,11 +1,9 @@
 package com.bankapp;
 
 
-import com.bankapp.Bloc.Account.Account;
-import com.bankapp.Bloc.Account.Deposit;
-import com.bankapp.Bloc.Account.Transfer;
-import com.bankapp.Bloc.Account.Withdrawal;
+import com.bankapp.Bloc.Account.*;
 import com.bankapp.Bloc.Error.AccountNotFound;
+import com.bankapp.Bloc.Error.FixedAccountDepositException;
 import com.bankapp.Bloc.Reader.IReader;
 import com.bankapp.Bloc.Wrapper.Command;
 import com.bankapp.Bloc.Wrapper.printer;
@@ -109,6 +107,10 @@ public class Application {
                     this.ViewAccountStatement();
                     break;
 
+                case FIXED:
+                    this.CreateNewFixedAccount();
+                    break;
+
                 default:
 
                     break;
@@ -145,6 +147,13 @@ public class Application {
                         newAccount.getFullName()
                         )
         );
+
+    }
+
+    public void CreateNewFixedAccount() throws FixedAccountDepositException {
+        FixedAccount fixedAccount = this.reader.nextFixedAccount();
+
+        fixedAccount.depositAmount();
 
     }
 

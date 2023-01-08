@@ -17,7 +17,6 @@ public class Account {
     private List<Withdrawal> withdrawals = new ArrayList<Withdrawal>(){
         @Override
         public boolean add(Withdrawal withdrawal) {
-            canWithdraw();
 
             balance-=withdrawal.getAmount();
 
@@ -28,13 +27,16 @@ public class Account {
     private List<Deposit> deposits = new ArrayList<Deposit>(){
         @Override
         public boolean add(Deposit deposit) {
-            canDeposit();
 
             balance+=deposit.getAmount();
 
             return super.add(deposit);
         }
     };
+
+
+
+    private List<Account> fixedAccounts = new ArrayList<>();
 
 
     /**
@@ -163,4 +165,9 @@ public class Account {
 
 
 
+
+
+    public Integer getNewFixedAccountId() {
+        return (fixedAccounts.size() + 1) * 20000;
+    }
 }

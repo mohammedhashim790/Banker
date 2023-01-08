@@ -1,10 +1,7 @@
 package com.bankapp.Bloc.Reader;
 
 import com.bankapp.Application;
-import com.bankapp.Bloc.Account.Account;
-import com.bankapp.Bloc.Account.Deposit;
-import com.bankapp.Bloc.Account.Transfer;
-import com.bankapp.Bloc.Account.Withdrawal;
+import com.bankapp.Bloc.Account.*;
 import com.bankapp.Bloc.Wrapper.Command;
 
 import java.io.File;
@@ -101,4 +98,16 @@ public class TextReader implements IReader{
         return this.application.getAccountList().get(this.nextInt());
     }
 
+    @Override
+    public FixedAccount nextFixedAccount() {
+
+//         Get Account Details
+        Account account = application.getAccount(this.nextInt());
+
+        return new FixedAccount(
+                account.getAccountId(),
+                account.getNewFixedAccountId(),
+                this.nextDouble(),
+                this.nextInt());
+    }
 }
